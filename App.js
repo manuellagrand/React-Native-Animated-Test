@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Text, View, StyleSheet, Image } from 'react-native';
-import Draggable from './Draggable';
+import Draggable from './components/Draggable';
 
 export default function App() {
   return (
@@ -8,7 +8,7 @@ export default function App() {
       <Text style={styles.paragraph}>
         This is a cube, Dragg it around!
       </Text>
-      <Image style={styles.image} source={require('./downArrow.png')}/>
+      <Image style={styles.image} source={require('./assets/downArrow.png')}/>
       <Draggable/>
     </View>
   );
